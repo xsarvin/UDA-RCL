@@ -12,7 +12,7 @@ For supervised learning scenario:
 
 python main.py  
 
-for transfer learning scenario:
+For transfer learning scenario:
 
 python main_trans.py
 
