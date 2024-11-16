@@ -70,7 +70,6 @@ def root_cause(args):
 
         net.train()
 
-        train_start = time.time()
         for (l_e, m_e, t_e, l_c, m_c, t_c, src_adj, src_label) in s_train_loader:
             # 获取源域和目标域的特征
             bs, pn, _ = l_e.shape
@@ -95,12 +94,9 @@ def root_cause(args):
             loss_epoch += loss
             loss.backward()
             optimizer_net.step()
-        train_t += (time.time() - train_start)
-        test_st = time.time()
+
         result = val(args, s_test_loader, net, optimizer_net)
-        test_epoch = time.time() - test_st
-        print("train_t:{} test_t:{}".format(train_t, test_epoch))
-        # print(result)
+
         if best_result == {}:
             best_result = result
         else:
@@ -108,6 +104,5 @@ def root_cause(args):
                 best_result = result
     print("top1:{} --top3:{} --top5:{} --avg5:{}".format(best_result["top1"], best_result["top3"], best_result["top5"],
                                                          best_result["avg5"]))
-    # result = val(args, s_test_loader, net, optimizer_net)
-    # print(result)
+
     return best_result
