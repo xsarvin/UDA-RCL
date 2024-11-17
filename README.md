@@ -18,5 +18,9 @@ For transfer learning scenario:
 
 python main_trans.py
 
+# Architecture
+![image](https://github.com/user-attachments/assets/b9a39898-36a0-415b-90b2-6ca5d1984301)
+
+
 # Contact us
 Any questions can leave messages in "Issues"!
