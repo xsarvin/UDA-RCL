@@ -12,11 +12,11 @@ pip install -r requirements.txt
 # Run
 For supervised learning scenario: 
 
-python main.py  
+python main.py --method uda_rca --s_dataset AIops2021 --t_dataset AIops2021 --batch_size 10 --embed_dim 5 --hidden_dim 5 --beta 1
 
 For transfer learning scenario:
 
-python main_trans.py
+python main_trans.py --method uda_rca --s_dataset AIops2022 --t_dataset AIops2021 --batch_size 45 --embed_dim 5 --hidden_dim 5 --beta 1
 
 # Architecture
 ![image](https://github.com/user-attachments/assets/b9a39898-36a0-415b-90b2-6ca5d1984301)
