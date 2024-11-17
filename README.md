@@ -7,19 +7,28 @@ Our source data is available at https://www.aiops.cn/%e5%a4%9a%e6%a8%a1%e6%80%81
 we also release our pre-processed data in AIops2021 and AIops2022 folders, respectively.
 
 # Dependencies
+```
 pip install -r requirements.txt
+```
+
+
 
 # Run
-For supervised learning scenario: 
+###### For supervised learning scenario: 
 
+```
 python main.py --method uda_rca --s_dataset AIops2021 --t_dataset AIops2021 --batch_size 10 --embed_dim 5 --hidden_dim 5 --beta 1
+```
 
-For transfer learning scenario:
+###### For transfer learning scenario:
 
+```
 python main_trans.py --method uda_rca --s_dataset AIops2022 --t_dataset AIops2021 --batch_size 45 --embed_dim 5 --hidden_dim 5 --beta 1
+```
 
 # Architecture
 ![image](https://github.com/user-attachments/assets/b9a39898-36a0-415b-90b2-6ca5d1984301)
+
 
 
 # Contact us
