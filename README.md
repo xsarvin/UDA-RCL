@@ -27,7 +27,7 @@ python main_trans.py --method uda_rca --s_dataset AIops2022 --t_dataset AIops202
 ```
 
 # Architecture
-![image](https://github.com/user-attachments/assets/b9a39898-36a0-415b-90b2-6ca5d1984301)
+![image](https://github.com/user-attachments/assets/7f41f145-f7d4-4707-b73e-9d3658ba083a)
 
 
 
